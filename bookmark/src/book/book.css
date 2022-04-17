@@ -1,3 +1,4 @@
+
 #boxes{
     display: flex;
     flex-direction: row;
@@ -7,7 +8,7 @@
     overflow: auto;
     
     white-space: nowrap;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 .gr{
     background-color: green;
@@ -76,7 +77,9 @@
     padding: 10px;
     width: 100px;
     margin-right: 20px;
-    border: none;
+    border: 2px solid darkblue;
+    background-color: white;
+    
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
@@ -97,6 +100,9 @@
     border: 2px solid darkblue;
     cursor: pointer;
     height: fit-content;
+}
+.slota{
+    margin-left: 50px;
 }
 #boxes div:hover{
     background-color: darkblue;
@@ -162,6 +168,9 @@
 }
 @media (max-width:700px){
     #home h1,.slot{
+        margin-left: 0px;
+    }
+    .slota{
         margin-left: 0px;
     }
     #boxes div{

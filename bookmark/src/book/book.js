@@ -20,8 +20,10 @@ function Book(){
         c[1]=0;
         if(c[0]==1){
             cola.current.style.backgroundColor="green";
+            cola.current.style.borderColor="green"
+            colb.current.style.borderColor="darkblue"
             cola.current.style.color="white";
-            colb.current.style.backgroundColor="lightgrey";
+            colb.current.style.backgroundColor="white";
             colb.current.style.color="black";
     
         }
@@ -40,9 +42,11 @@ function Book(){
         c[0]=0;
         if(c[1]==1){
             colb.current.style.backgroundColor="green";
-            cola.current.style.backgroundColor="lightgrey";
+            cola.current.style.backgroundColor="white";
             cola.current.style.color="black";
             colb.current.style.color="white";
+            colb.current.style.borderColor="green"
+            cola.current.style.borderColor="darkblue"
         }
         
  
@@ -84,8 +88,8 @@ function Book(){
         <div id="topnav">
             
             <div id="mp">
-            <span style={{color:"darkblue"}}>Mentor</span>
-            <span style={{color:"red"}}>Plus</span>   
+            <span style={{color:"darkblue",display:"inline-block",fontWeight:"bolder"}}>Mentor</span>
+            <span style={{color:"red",display:"inline-block",fontWeight:"bolder"}}>Plus</span>   
             </div>
             <div id="bar">
                 <div></div>
@@ -96,8 +100,8 @@ function Book(){
         <div id="head">
         <div id="navbar">
         <div id="logo">
-            <h1 style={{color:"darkblue"}}>Mentor</h1>
-            <h1 style={{color:"red",position:"relative",left:"-30px"}}>Plus</h1>
+            <h1 style={{color:"darkblue",display:"inline-block",fontWeight:"bolder"}}>Mentor</h1>
+            <h1 style={{color:"red",position:"relative",left:"-30px",display:"inline-block",fontWeight:"bolder"}}>Plus</h1>
         </div>
             <h3>Home</h3>
             <h3>Profile</h3>
@@ -107,7 +111,8 @@ function Book(){
         </div>
         <div id="home">
         
-        <h1 id="colorful">Book A Slot</h1>
+        <h1 id="colorful">Book Demo Session Slot</h1>
+        <h2 className="slota">Select Date</h2>
         <div id="boxes">
             
          <div onClick={()=>changeDisplay(x.getDate())}>
