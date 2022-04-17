@@ -1,0 +1,199 @@
+#boxes{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 50px;
+    width: 80vw;
+    overflow: auto;
+    
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif
+}
+.gr{
+    background-color: green;
+    color: white;
+    border-color:green ;
+}
+.grey{
+    background-color:lightgray;
+    color: black;
+    border-color:lightgray ;
+}
+#pay button{
+    margin-left: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    border-color: darkblue;
+    background-color: darkblue;
+    color: white;
+}
+#home h1{
+    margin-top: 80px;
+}
+#topnav{
+    position: fixed;
+    
+    width: 110vw;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 20px 0 lightgray;
+}
+#bar {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    margin-right: 50px;
+   position: relative;
+   right: -30vw;
+
+}
+#bar div{
+    height: 2px;
+    margin: 2px;
+    background-color: darkblue;
+    
+}
+#home{
+    display: block;
+}
+
+#home h1{
+    margin-left: 50px;
+    
+}
+.slot{
+    margin-left: 50px;
+}
+.slot button{
+    height: 40px;
+    padding: 10px;
+    width: 100px;
+    margin-right: 20px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*.slot button:hover{
+    background-color: green;
+    color: white;
+}*/
+#boxes div{
+    display: flex;
+    width: 10vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid darkblue;
+    cursor: pointer;
+    height: fit-content;
+}
+#boxes div:hover{
+    background-color: darkblue;
+    color: white;
+
+}
+.close{
+    display: none;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#navbar{
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    font-size: x-small;
+    width: 18vw;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    height: 100vw;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#navbar h3{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 20px;
+    width: 10vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar h1{
+   margin-left: 30px;
+    position: relative;
+    
+   
+}
+#head{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:1000px){
+    #boxes div{
+        width: 9vw;
+        font-size: 85%;
+    }
+}
+@media (max-width:780px){
+    #boxes div{
+        width: 11vw;
+        font-size: 85%;
+    }
+}
+@media (max-width:700px){
+    #home h1,.slot{
+        margin-left: 0px;
+    }
+    #boxes div{
+        padding: 20px;
+    }
+}
+@media (max-width:800px){
+    #navbar{
+        display: none;
+    }
+    #topnav{
+        display: flex;
+
+    }
+   
+}
+@media (max-width:600px){
+    
+    #boxes div{
+        width: 20vw;
+    }
+
+}
+@media (max-width:560px){
+   
+}
+@media (max-width:380px){
+   
+    #boxes div{
+        width: 40vw;
+    }
+}
+@media (max-width:300px){
+   
+}
